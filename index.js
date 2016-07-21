@@ -155,7 +155,6 @@ exports.decorateTerm = (Term, { React, notify }) => {
     }
 
     _onCursorChange () {
-      this._shake();
       const { top, left } = this._cursor.getBoundingClientRect();
       const origin = this._div.getBoundingClientRect();
       requestAnimationFrame(() => {
